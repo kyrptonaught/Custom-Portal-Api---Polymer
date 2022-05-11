@@ -24,7 +24,13 @@ public class VirtualPortalBlock implements PolymerBlock {
     @Override
     public BlockState getPolymerBlockState(BlockState state) {
         Direction.Axis dir = CustomPortalHelper.getAxisFrom(state);
-        return this.getPolymerBlock(state).getDefaultState().with(NetherPortalBlock.AXIS, dir);
+        if (dir == Direction.Axis.Y)
+            return Blocks.END_PORTAL.getDefaultState();
+
+        if (dir == Direction.Axis.Z)
+            return this.getPolymerBlock(state).getDefaultState().with(NetherPortalBlock.AXIS, Direction.Axis.Z);
+
+        return this.getPolymerBlock(state).getDefaultState();
     }
 
     @Override
