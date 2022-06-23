@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "cpa-polymer",
-  "version": "0.0.3-1.18",
+  "version": "1.0.0-1.18",
   "name": "CustomPortalApi-Polymer",
   "description": "Server-side only custom portals with Polymer!",
   "authors": [
@@ -14,11 +14,6 @@
   "license": "MIT",
   "icon": "assets/customportalapi/icon.png",
   "environment": "server",
-  "entrypoints": {
-    "server": [
-      "net.kyrptonaught.servercustomportals.ServerCustomPortals"
-    ]
-  },
   "mixins": [
     {
       "config": "servercustomportals.mixins.json",
