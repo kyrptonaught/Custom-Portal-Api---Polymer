@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "cpa-polymer",
-  "version": "1.0.0-1.18",
+  "version": "1.0.2-1.19",
   "name": "CustomPortalApi-Polymer",
   "description": "Server-side only custom portals with Polymer!",
   "authors": [
