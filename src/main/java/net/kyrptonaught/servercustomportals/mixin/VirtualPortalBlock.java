@@ -1,7 +1,10 @@
 package net.kyrptonaught.servercustomportals.mixin;
 
-import eu.pb4.polymer.api.block.PolymerBlock;
-import eu.pb4.polymer.api.block.PolymerBlockUtils;
+// import eu.pb4.polymer.api.block.PolymerBlock;
+// import eu.pb4.polymer.api.block.PolymerBlockUtils;
+
+import eu.pb4.polymer.core.api.block.PolymerBlock;
+import eu.pb4.polymer.core.api.block.PolymerBlockUtils;
 import net.kyrptonaught.customportalapi.CustomPortalBlock;
 import net.kyrptonaught.customportalapi.networking.ForcePlacePortalPacket;
 import net.kyrptonaught.customportalapi.util.CustomPortalHelper;
@@ -37,7 +40,7 @@ public class VirtualPortalBlock implements PolymerBlock {
         return Blocks.NETHER_PORTAL.getDefaultState().with(NetherPortalBlock.AXIS, dir);
     }
 
-    @Override
+    // @Override
     public void onPolymerBlockSend(ServerPlayerEntity player, BlockPos.Mutable pos, BlockState blockState) {
         Direction.Axis dir = CustomPortalHelper.getAxisFrom(blockState);
         if (dir == Direction.Axis.Y) {
